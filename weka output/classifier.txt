@@ -1,0 +1,165 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+Relation:     dataset_train
+Instances:    2000
+Attributes:   21
+              battery_power
+              blue
+              clock_speed
+              dual_sim
+              fc
+              four_g
+              int_memory
+              m_dep
+              mobile_wt
+              n_cores
+              pc
+              px_height
+              px_width
+              ram
+              sc_h
+              sc_w
+              talk_time
+              three_g
+              touch_screen
+              wifi
+              price_range
+Test mode:    split 66.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+
+REPTree
+============
+
+ram < 2113.5
+|   ram < 1235
+|   |   px_height < 1441.5
+|   |   |   ram < 1052.5
+|   |   |   |   battery_power < 1816.5 : 0.03 (221/0.03) [136/0.02]
+|   |   |   |   battery_power >= 1816.5
+|   |   |   |   |   px_width < 1180
+|   |   |   |   |   |   ram < 900.5 : 0 (18/0) [4/0]
+|   |   |   |   |   |   ram >= 900.5 : 0.67 (3/0.22) [0/0]
+|   |   |   |   |   px_width >= 1180
+|   |   |   |   |   |   ram < 513 : 0 (4/0) [3/0]
+|   |   |   |   |   |   ram >= 513
+|   |   |   |   |   |   |   px_height < 384 : 0 (2/0) [0/0]
+|   |   |   |   |   |   |   px_height >= 384 : 1 (10/0) [2/0]
+|   |   |   ram >= 1052.5
+|   |   |   |   battery_power < 1125.5 : 0.1 (30/0.03) [12/0.23]
+|   |   |   |   battery_power >= 1125.5 : 0.8 (29/0.21) [17/0.18]
+|   |   px_height >= 1441.5
+|   |   |   ram < 565.5 : 0.2 (4/0.19) [1/0.06]
+|   |   |   ram >= 565.5 : 0.96 (14/0) [12/0.25]
+|   ram >= 1235
+|   |   battery_power < 1086.5
+|   |   |   ram < 1490.5 : 0.22 (36/0.19) [22/0.15]
+|   |   |   ram >= 1490.5
+|   |   |   |   px_width < 698.5 : 0.42 (11/0.25) [1/0.21]
+|   |   |   |   px_width >= 698.5
+|   |   |   |   |   sc_w < 0.5 : 0.42 (6/0.22) [6/0.39]
+|   |   |   |   |   sc_w >= 0.5
+|   |   |   |   |   |   px_height < 1455
+|   |   |   |   |   |   |   px_width < 908.5 : 0.88 (8/0.11) [8/0.11]
+|   |   |   |   |   |   |   px_width >= 908.5 : 1.01 (59/0) [24/0.04]
+|   |   |   |   |   |   px_height >= 1455 : 1.33 (4/0.19) [2/0.31]
+|   |   battery_power >= 1086.5
+|   |   |   px_height < 954
+|   |   |   |   ram < 1896.5
+|   |   |   |   |   px_width < 1545.5
+|   |   |   |   |   |   battery_power < 1243 : 0.85 (18/0.1) [8/0.21]
+|   |   |   |   |   |   battery_power >= 1243 : 1.02 (64/0) [39/0.1]
+|   |   |   |   |   px_width >= 1545.5 : 1.19 (25/0.16) [11/0.15]
+|   |   |   |   ram >= 1896.5
+|   |   |   |   |   px_width < 1083.5 : 1.11 (17/0.06) [2/0.44]
+|   |   |   |   |   px_width >= 1083.5 : 1.95 (13/0.07) [6/0.01]
+|   |   |   px_height >= 954
+|   |   |   |   ram < 1461.5 : 1.22 (13/0.07) [10/0.34]
+|   |   |   |   ram >= 1461.5
+|   |   |   |   |   battery_power < 1113 : 1 (3/0) [0/0]
+|   |   |   |   |   battery_power >= 1113
+|   |   |   |   |   |   battery_power < 1570.5
+|   |   |   |   |   |   |   px_height < 1298.5
+|   |   |   |   |   |   |   |   ram < 1807.5 : 1 (4/0) [2/0]
+|   |   |   |   |   |   |   |   ram >= 1807.5 : 1.78 (5/0.16) [4/0.19]
+|   |   |   |   |   |   |   px_height >= 1298.5 : 2 (9/0) [2/0]
+|   |   |   |   |   |   battery_power >= 1570.5 : 2 (18/0) [5/0]
+ram >= 2113.5
+|   ram < 3013.5
+|   |   battery_power < 1370.5
+|   |   |   ram < 2421
+|   |   |   |   px_width < 1389
+|   |   |   |   |   battery_power < 952.5 : 1 (24/0) [11/0]
+|   |   |   |   |   battery_power >= 952.5
+|   |   |   |   |   |   px_height < 486 : 1.11 (11/0.08) [8/0.11]
+|   |   |   |   |   |   px_height >= 486 : 1.67 (7/0.2) [5/0.25]
+|   |   |   |   px_width >= 1389
+|   |   |   |   |   m_dep < 0.95
+|   |   |   |   |   |   pc < 5 : 1.55 (6/0.22) [5/0.31]
+|   |   |   |   |   |   pc >= 5 : 1.96 (19/0) [7/0.14]
+|   |   |   |   |   m_dep >= 0.95 : 1 (2/0) [0/0]
+|   |   |   ram >= 2421
+|   |   |   |   px_height < 988
+|   |   |   |   |   battery_power < 631
+|   |   |   |   |   |   px_width < 859.5 : 1.1 (7/0.12) [3/0.02]
+|   |   |   |   |   |   px_width >= 859.5
+|   |   |   |   |   |   |   px_height < 202 : 1.2 (2/0) [3/0.33]
+|   |   |   |   |   |   |   px_height >= 202 : 1.91 (16/0.06) [6/0.15]
+|   |   |   |   |   battery_power >= 631
+|   |   |   |   |   |   ram < 2641 : 1.83 (34/0.13) [12/0.2]
+|   |   |   |   |   |   ram >= 2641 : 2.01 (57/0) [15/0.2]
+|   |   |   |   px_height >= 988 : 2.26 (26/0.18) [12/0.23]
+|   |   battery_power >= 1370.5
+|   |   |   px_width < 1199.5
+|   |   |   |   ram < 2834
+|   |   |   |   |   ram < 2294
+|   |   |   |   |   |   battery_power < 1567 : 1.33 (4/0.19) [5/0.26]
+|   |   |   |   |   |   battery_power >= 1567 : 2 (6/0) [3/0]
+|   |   |   |   |   ram >= 2294 : 2.01 (44/0) [24/0.04]
+|   |   |   |   ram >= 2834 : 2.29 (12/0.22) [5/0.18]
+|   |   |   px_width >= 1199.5
+|   |   |   |   ram < 2499.5 : 2.23 (30/0.16) [13/0.22]
+|   |   |   |   ram >= 2499.5 : 2.82 (30/0.12) [19/0.21]
+|   ram >= 3013.5
+|   |   battery_power < 651.5
+|   |   |   px_height < 831.5 : 2.18 (27/0.13) [11/0.21]
+|   |   |   px_height >= 831.5 : 2.89 (7/0.12) [11/0.09]
+|   |   battery_power >= 651.5
+|   |   |   ram < 3314.5
+|   |   |   |   battery_power < 1040.5
+|   |   |   |   |   px_height < 887.5
+|   |   |   |   |   |   px_width < 1851.5
+|   |   |   |   |   |   |   ram < 3273 : 2 (19/0) [5/0]
+|   |   |   |   |   |   |   ram >= 3273 : 2.5 (2/0.25) [0/0]
+|   |   |   |   |   |   px_width >= 1851.5 : 3 (3/0) [0/0]
+|   |   |   |   |   px_height >= 887.5 : 3 (4/0) [3/0]
+|   |   |   |   battery_power >= 1040.5
+|   |   |   |   |   battery_power < 1394
+|   |   |   |   |   |   px_width < 1025 : 2 (7/0) [3/0]
+|   |   |   |   |   |   px_width >= 1025 : 2.87 (19/0.09) [11/0.15]
+|   |   |   |   |   battery_power >= 1394 : 2.95 (42/0.02) [14/0.14]
+|   |   |   ram >= 3314.5
+|   |   |   |   battery_power < 731
+|   |   |   |   |   px_width < 1142.5 : 2.38 (6/0.22) [2/0.28]
+|   |   |   |   |   px_width >= 1142.5 : 3 (9/0) [5/0]
+|   |   |   |   battery_power >= 731 : 2.97 (203/0.01) [107/0.05]
+
+Size of the tree : 113
+
+Time taken to build model: 0.1 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.01 seconds
+
+=== Summary ===
+
+Correlation coefficient                  0.936 
+Mean absolute error                      0.2204
+Root mean squared error                  0.3954
+Relative absolute error                 22.1624 %
+Root relative squared error             35.5173 %
+Total Number of Instances              680     
+
