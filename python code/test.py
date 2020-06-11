@@ -13,13 +13,14 @@ part = df.iloc[:, 4]
 df.info()
 # plot all attributes in one graph
 df.plot()
-# plot a certain range
-
 plt.show()
+# plot a certain range
 part.plot.area(figsize=(9, 4), subplots=True)
 plt.show()
+# plot all attributes as histogram
 pd.DataFrame.hist(df)
 plt.show()
+# box plot for certain attributes
 part.plot.box()
 plt.show()
 
